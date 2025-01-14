@@ -1,35 +1,59 @@
-# Cypress Testing Project
+# 🚀 **Cypress Testing Project**
 
-Este projeto foi desenvolvido para validar as funcionalidades de uma aplicação utilizando o **Cypress**, abordando diferentes cenários de testes, como login, registro e validações de APIs. Abaixo estão os detalhes e resultados de cada conjunto de testes.
+Bem-vindo ao repositório de testes automatizados desenvolvidos com **Cypress**!  
+
+🔎 **Evidências disponíveis**:  
+Todos os vídeos e relatórios HTML estão disponíveis para consulta nas seguintes pastas:  
+- 📂 **Vídeos dos testes:** `./cypress/videos`  
+- 📂 **Documentação HTML:** `./cypress/results`  
+
+Confira abaixo as capturas e descrições das camadas de testes realizadas! 🎯
 
 ---
 
-## **Login Page Tests**
-Este conjunto de testes valida o fluxo de autenticação, incluindo campos obrigatórios, mensagens de erro e cenários de login bem-sucedido e falhas.
+## 🔐 **Login Page Tests**  
+Este conjunto de testes garante a funcionalidade e a segurança da página de login:  
+✔️ Validação de campos obrigatórios  
+✔️ Mensagens de erro adequadas  
+✔️ Fluxos de login bem-sucedidos e cenários de falha  
 
+📸 **Evidência**:  
 ![Login Page Tests](https://github.com/user-attachments/assets/8b90916a-4d8d-4ac4-a95a-e8aaf5b62238)
 
 ---
 
-## **Register Page Tests**
-Testes para a página de registro, verificando a criação de contas com dados válidos, mensagens de erro para campos inválidos e a interação correta com a API de registro.
+## 📝 **Register Page Tests**  
+Os testes da página de registro verificam a criação de contas com dados válidos e a resposta correta da API:  
+✔️ Validação de campos obrigatórios  
+✔️ Mensagens de erro personalizadas  
+✔️ Interação com a API de registro  
 
+📸 **Evidência**:  
 ![Register Page Tests](https://github.com/user-attachments/assets/b899a063-8d14-4462-9341-8f939c52391a)
 
 ---
 
-## **API Message Test**
-Este teste foca na camada de API, validando o endpoint responsável por mensagens. Foram testados status HTTP, estrutura da resposta e cenários de erro.
+## 🔗 **API Message Test**  
+Este teste valida o endpoint de mensagens da API, garantindo a integridade e confiabilidade da resposta:  
+✔️ Verificação de status HTTP  
+✔️ Estrutura correta do corpo da resposta  
+✔️ Cenários de erro cobertos  
 
+📸 **Evidência**:  
 ![API Message Tests](https://github.com/user-attachments/assets/687c848e-92a0-4193-9b6f-acfda214d845)
 
 ---
 
-## **All Tests**
-Uma visão consolidada de todos os testes realizados, demonstrando que todos os cenários foram validados com sucesso.
+## ✅ **All Tests**  
+Uma visão consolidada de todos os testes realizados, demonstrando 100% de sucesso nas validações! 🏆  
 
+📸 **Evidência**:  
 ![All Tests](https://github.com/user-attachments/assets/c2c002c7-280e-46bf-a1e0-26a38a5e2f18)
 
 ---
 
-O projeto utiliza boas práticas de automação e pode ser facilmente integrado a pipelines de CI/CD para garantir a qualidade contínua da aplicação. Caso precise de mais informações, fico à disposição!
+💡 **Destaques do projeto**:  
+- 📊 Testes automatizados para front-end e back-end  
+- 🔄 Integração contínua facilitada com Cypress Cloud  
+- 🎥 Evidências completas com vídeos e relatórios  
+
