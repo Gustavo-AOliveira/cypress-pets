@@ -3,8 +3,6 @@ describe('Register page', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
   })
 
-
-
   it('Must fill in the fields and register', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/')
     cy.get('[data-test="register-button"]').click();
