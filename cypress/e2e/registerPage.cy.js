@@ -1,12 +1,11 @@
-describe('Must open the page', () => {
-  it('page', () => {
+describe('Register page', () => {
+  it('Must open the page', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
   })
-})
 
 
-describe('Must fill in the fields and register', ()=> {
-  it('page', () => {
+
+  it('Must fill in the fields and register', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/')
     cy.get('[data-test="register-button"]').click();
     cy.get('[data-test="input-name"]').type('Gustavo1');
@@ -15,11 +14,8 @@ describe('Must fill in the fields and register', ()=> {
     cy.get('[data-test="input-confirm-password"]').type('Gustavo123');
     cy.get('[data-test="submit-button"]').click()
   })
-})
 
-describe('Must return a error message when register without fill in the fields', () => {
-
-  it('page', () => {
+  it('Must return a error message when register without fill in the fields', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/')
     cy.get('[data-test="register-button"]').click();
     cy.get('[data-test="submit-button"]').click()
@@ -28,12 +24,8 @@ describe('Must return a error message when register without fill in the fields',
     cy.contains('form > :nth-child(8)', 'Crie uma senha');
     cy.contains('form > :nth-child(11)', 'Repita a senha criada acima');
     }) 
-})
-
-
-describe('Must return a error message when dont fill in the email field', () => {
-
-  it('page', () => {
+  
+  it('Must return a error message when dont fill in the email field', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/')
     cy.get('[data-test="register-button"]').click();
 
@@ -45,11 +37,8 @@ describe('Must return a error message when dont fill in the email field', () => 
     cy.contains('form > :nth-child(5)', 'É necessário informar um endereço de email');
 
     })
-})
 
-describe('Must return a error message when dont fill in the password field', () => {
-
-  it('page', () => {
+  it('Must return a error message when dont fill in the password field', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/')
     cy.get('[data-test="register-button"]').click();
 
@@ -60,11 +49,8 @@ describe('Must return a error message when dont fill in the password field', () 
     cy.contains('Crie uma senha').should('be.visible');
 
     })
-})
 
-describe('Must return a error message when dont fill in the confirm password field', () => {
-
-  it('page', () => {
+  it('Must return a error message when dont fill in the confirm password field', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/')
     cy.get('[data-test="register-button"]').click();
 
